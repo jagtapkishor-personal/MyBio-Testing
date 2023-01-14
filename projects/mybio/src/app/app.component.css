@@ -1,0 +1,96 @@
+.view {
+    animation: viewbar 5s infinite alternate linear;
+}
+
+@keyframes viewbar {
+    0%,
+    100% {
+        background-color: rgb(251, 255, 0);
+    }
+
+    50% {
+        background-color: rgb(0, 255, 42);
+    }
+
+    75% {
+        background-color: rgb(233, 14, 233);
+    }
+}
+
+div.box {
+    position: fixed;
+    top: 0px;
+    right: 100px;
+    z-index: 99999;
+    animation: move 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    border-radius: 20px;
+}
+div.box>img{
+    width: 50px;
+}
+
+@keyframes move {
+    0% {
+        top: 80px;
+    }
+    10% {
+        top: 110px;
+    }
+
+    30% {
+        top: 140px;
+    }
+
+    40% {
+        top: 170px;
+    }
+
+    50% {
+        top: 200px;
+    }
+    55%
+    {
+        top: 210px;
+    }
+    60% {
+        top: 200px;
+    }
+    70% {
+        top: 170px;
+    }
+    80% {
+        top: 140px;
+    }
+    90% {
+        top: 110px;
+    }
+
+    100% {
+        top: 80px; 
+    }
+}
+
+div.bg-info{
+    height: 100vh;
+}
+
+
+@media only screen and (max-width:749px) {
+        div.box {
+            width: 30px;
+            height: 30px;
+            position: fixed;
+            top: 0px;
+            right: 100px;
+            animation: move 2s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            border-radius: 20px;
+    }
+    div.bg-info
+    {
+        height: 173vmax;
+    }
+}

@@ -1,0 +1,34 @@
+<!-- <div class="main">
+  <div>
+    <h2>Make My trip</h2>
+  </div>
+  <div class="main1">
+    <h5>Introducing MyBliz <span>
+        <h6>Business Travel Solution</h6>
+      </span></h5>
+    <h5>My Trips<span>
+        <h6>Manage your booking</h6>
+      </span></h5>
+    <button>Login Or Create Account</button>
+    <h5 class="IN">IN | ENG | INR</h5>
+  </div>
+</div> -->
+
+<div>
+  <input appColourchange type="text">
+</div>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-3" *ngFor="let item of data">
+      <div class="card" appColourchange>
+        <img class="card-img-top" src="{{item?.image}}" [height]="100" [width]="50" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title text-truncate"> {{item?.title}}</h5>
+          <p class="card-text text-truncate">Some quick example text to build on the card title and make up the bulk of
+            the card's content.</p>
+          <a href="#" class="btn btn-primary" (click)="goto(item?.id)">Go somewhere</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,28 @@
+.main
+{
+    display: flex;
+    justify-content:space-between;
+    margin-left: 20px;
+    margin-right: 20px;
+    align-self: center;
+
+}
+
+button
+{
+    border-radius: 5px;
+}
+.main1
+{
+    display: flex;
+   
+}
+h5{
+    padding-inline-start: 20px;
+    padding-inline-end: 20px;
+    justify-content: center;
+}
+.IN
+{
+    margin-top: 15px;
+}
